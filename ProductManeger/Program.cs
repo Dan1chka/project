@@ -28,7 +28,23 @@ public class Program
     {
         var product = db.Products.Find();
     }
-    
-    
+
+    public void UpdateProduct(ProductContext db)
+    {
+        db.Products.Update(new Product()
+        {
+            Id = 1,
+            Articul = 123412134,
+            Name = "Вентилятор Натаха",
+            Manufacturer = "Китай",
+            Price = 2000,
+            QuantityInStock = 7
+        });
+    }
+
+    public void GetAllProduct(ProductContext db)
+    {
+        db.Products.
+    }
 }
 
